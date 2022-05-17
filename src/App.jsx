@@ -42,7 +42,7 @@ function App(){
   function handleClick () {
 
     console.log(card) //Request is shown in the browser console
-    axios.post("http://localhost:5000/api", card)
+    axios.post("https://still-sands-76316.herokuapp.com/api", card)
     .then(res => console.log(res.data)); //Response is shown in the browser console
     setCard({
       cardNumber: "",
